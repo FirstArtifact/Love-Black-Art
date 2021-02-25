@@ -2,6 +2,11 @@ body {
     padding: 0;
     margin: 0;
     font-family: 'Open Sans', sans-serif;
+    background: #EFEFEF;
+}
+
+.body-width {
+    margin: 0 190px;
 }
 
 .navbar-container {
@@ -20,6 +25,7 @@ body {
     background-color: #474747;
     overflow: hidden;
     height: 80px;
+    border-bottom: 1px solid #646464;
     
 }
 
@@ -46,12 +52,11 @@ body {
     color: #e7e7e7;
     text-align: center;
     text-decoration: none;
-    font-size: 12px;
+    font-size: 16px;
     align-self: center;
     padding: 0 12;
 }
 
-/* Change the color of links on hover */
 .navbar a:hover, .social-links i:hover {
     color: #d4af37;
 }
@@ -64,12 +69,87 @@ body {
 
 .social-links i {
     color:#e7e7e7;
-    font-size: 12px;
+    font-size: 14px;
     padding-left: 10px;
 }
 
+.header-image  {
+    background-image: url('/assets/images/Header Image love black art (2).png');
+    height: 100%;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: auto;
+    background-position-y: top;
+}
 
-/* .navbar a.active {
-    background-color: #4CAF50;
-    color: white;
-} */
+
+
+@media only screen and (max-width: 1440px) {
+    .header-image {
+        background-image: url('/assets/images/rsz_header_image_love_black_art_2.png');
+        background-size:auto;
+        background-position-y: top;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .header-image {
+        background-image: url('/assets/images/600-header-image.png');
+    }
+}
+
+.what-we-do-container {
+    display: flex;
+    padding-bottom: 210px;
+    align-items: center;
+    flex-direction: column;
+}
+
+.what-we-do-header {
+    font-size: 42px;
+    color: #474747;
+}
+
+.what-we-do-body {
+    display: flex;
+    padding-top: 80px;
+    width: 100%;
+    justify-content: center;
+}
+
+.wwd-icon {
+    font-size: 48px;
+    color: #78387B;
+    align-self: center;
+}
+
+.what-we-do-subjects {
+    display: inline-flex;
+    width: 100%;
+    justify-content: space-evenly;
+}
+
+.what-we-do-subjects-text {
+    color: #474747;
+    font-size: 14px;
+}
+
+.wwd-copy {
+    padding-left: 24px;
+    align-self: center;
+    width: 200px;
+}
+
+.wwd-copy-header {
+    font-weight: bold;
+    padding-bottom: 8px;
+}
+
+.wwd-subjects-item {
+    display: flex;
+}
+
+.wwd-line-separator {
+    border: 1px solid rgba(120, 56, 123, 0.5);
+    margin-bottom: 132px;
+}
