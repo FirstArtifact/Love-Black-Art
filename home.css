@@ -106,33 +106,33 @@ body {
     flex-direction: column;
 }
 
-.what-we-do-header {
+.wwd-header {
     font-size: 42px;
     color: #474747;
 }
 
-.what-we-do-body {
+.wwd-body {
     display: flex;
     padding-top: 80px;
     width: 100%;
     justify-content: center;
 }
 
-.wwd-icon {
-    font-size: 48px;
-    color: #78387B;
-    align-self: center;
-}
-
-.what-we-do-subjects {
+.wwd-subjects {
     display: inline-flex;
     width: 100%;
     justify-content: space-evenly;
 }
 
-.what-we-do-subjects-text {
+.wwd-subjects-text {
     color: #474747;
     font-size: 14px;
+}
+
+.wwd-icon {
+    font-size: 48px;
+    color: #78387B;
+    align-self: center;
 }
 
 .wwd-copy {
