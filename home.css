@@ -534,13 +534,13 @@ footer {
     padding-top: 129px;
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
+    justify-content: space-between;
     color: white;
     padding-bottom: 32px;
 }
 
 .foot-contact, .foot-posts, .foot-info { 
-    width: 18%;
+    width: 25%;
 }
 
 .foot-contact-header, .foot-posts-header {
@@ -580,6 +580,5 @@ footer {
     color: white;
     font-size: 12px;
     bottom: 0;
-    position: absolute;
     line-height: 3;
 }
