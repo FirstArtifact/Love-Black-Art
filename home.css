@@ -29,6 +29,11 @@ body {
     
 }
 
+.logo-container {
+    display: flex;
+    align-self: center;
+}
+
 .section-one-container {
     display: flex;
     width: 100%;
@@ -477,7 +482,7 @@ input[type=text], textarea {
     background-color: transparent;
     font-size: 14px;
     color: #474747;
-  }
+}
 
 textarea {
     width: 100%;
