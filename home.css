@@ -89,19 +89,14 @@ body {
 
 
 
-@media only screen and (max-width: 1440px) {
-    .header-image {
-        background-image: url('/assets/images/rsz_header_image_love_black_art_2.png');
-        background-size:auto;
-        background-position-y: top;
-    }
-}
+.header-images{
+    width: 100%;
+    height: auto;
+    max-height: 500px !important;
+  }
 
-@media only screen and (max-width: 600px) {
-    .header-image {
-        background-image: url('/assets/images/600-header-image.png');
-    }
-}
+
+
 
 .what-we-do-container {
     display: flex;
