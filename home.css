@@ -3,6 +3,7 @@ body {
     margin: 0;
     font-family: 'Open Sans', sans-serif;
     background: #EFEFEF;
+    width: fit-content;
 }
 
 .body-width {
@@ -60,6 +61,7 @@ body {
     font-size: 16px;
     align-self: center;
     padding: 0 12;
+    min-width: 320px;
 }
 
 .navbar a:hover, .social-links i:hover {
