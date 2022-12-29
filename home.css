@@ -8,6 +8,15 @@ body {
     background: #EFEFEF;
 }
 
+a {
+    color: inherit;
+    text-decoration: inherit;
+}
+
+a:hover {
+    color: #2C79ED;
+}
+
 .body-width {
     margin: 0 190px;
 }
@@ -17,6 +26,7 @@ body {
     backdrop-filter: blur(5px);
     position: fixed;
     width: 100%;
+    z-index: 1000000;
 }
 
 .navbar-container {
@@ -73,7 +83,7 @@ body {
 
 .navbar a:hover,
 .social-links i:hover {
-    color: #d4af37;
+    color: #2C79ED;
 }
 
 .social-links-container {
@@ -99,10 +109,10 @@ body {
 }
 
 .header-slide-1-callout-container {
-    height:100%; 
+    height: 100%;
     flex-direction: column;
-    display: flex; 
-    justify-content: center; 
+    display: flex;
+    justify-content: center;
     align-items: center;
 }
 
@@ -119,37 +129,6 @@ body {
     line-height: 32px;
 }
 
-
-
-@media only screen and (max-width: 1440px) {
-    .header-image {
-        background-image: url('/assets/images/pexels-motional-studio-1081685-720p.jpg');
-        background-size: auto;
-        background-position-y: top;
-        background-attachment: fixed;
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
-    }
-}
-
-@media only screen and (max-width: 2560px) {
-    .header-image {
-        background-image: url('/assets/images/pexels-motional-studio-1081685-1440p.jpg');
-        background-size: auto;
-        background-position-y: top;
-        background-attachment: fixed;
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
-    }
-}
-
-@media only screen and (max-width: 600px) {
-    .header-image {
-        background-image: url('/assets/images/pexels-motional-studio-1081685-mobile.jpg');
-    }
-}
 
 .what-we-do-container {
     display: flex;
@@ -246,7 +225,7 @@ body {
 }
 
 .mof-line-separator {
-    border: 1px solid #000941;
+    border: 1px solid #2C79ED;
     margin: 0 auto;
 
 }
@@ -267,7 +246,7 @@ body {
 }
 
 .mof-button-container {
-    padding-top: 42px;
+    padding-top: 72px;
     align-self: center;
 }
 
@@ -299,6 +278,7 @@ body {
 .mof-button:focus {
     -webkit-transform: translateY(-8px);
     transform: translateY(-8px);
+    background-color: #1d6ce3;
 }
 
 .latest-blog-container {
@@ -324,12 +304,7 @@ body {
     padding-top: 14px;
 }
 
-.bp-1-container {
-    padding-top: 64px;
-    display: flex;
-    justify-content: space-evenly;
-}
-
+.bp-1-container,
 .bp-2-container {
     padding-top: 64px;
     display: flex;
@@ -351,6 +326,10 @@ body {
     align-self: center;
     padding-right: 32px;
     width: 33%;
+}
+
+.bp-2-copy-container-mobile {
+    display: none;
 }
 
 .bp-copy-header {
@@ -624,6 +603,7 @@ footer {
     align-items: baseline;
     font-size: 14px;
     padding-top: 16px;
+    text-decoration: none !important;
 }
 
 .foot-addy i,
@@ -649,4 +629,203 @@ footer {
     font-size: 12px;
     bottom: 0;
     line-height: 3;
+}
+
+@media only screen and (max-width: 2560px) {
+    .header-image {
+        background-image: url('/assets/images/pexels-motional-studio-1081685-1440p.jpg');
+        background-size: auto;
+        background-position-y: top;
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+}
+
+@media only screen and (max-width: 1440px) {
+    .header-image {
+        background-image: url('/assets/images/pexels-motional-studio-1081685-720p.jpg');
+        background-size: auto;
+        background-position-y: top;
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+}
+
+@media only screen and (max-width: 1200px) {
+    .body-width {
+        margin: auto
+    }
+
+    .mof-content-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .mof-container {
+        height: max-content !important;
+    }
+
+    .mof-button-container {
+        display: none;
+    }
+
+    .founder-image-container {
+        max-width: 40%;
+        padding-bottom: 48px;
+    }
+
+    .footer-content-container {
+        padding-left: 32px;
+        padding-right: 32px;
+    }
+
+    .copyright {
+        padding-left: 32px;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    .navbar-container {
+        width: 100%;
+        justify-content: space-evenly;
+    }
+    .section-one-container {
+        width: auto;
+    }
+    .wwd-subjects {
+        display: flex !important;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .wwd-subjects-item {
+        padding-bottom: 14px;
+    }
+
+    .mof-header,
+    .wwd-header {
+        font-size: 32px;
+    }
+
+    .mof-copy {
+        font-size: 12px;
+    }
+
+    .mof-copy-container {
+        width: auto;
+        padding: 24px 32px 0 32px;
+    }
+
+    .wwd-body {
+        padding-top: 48px;
+    }
+
+    .bp-1-container,
+    .bp-2-container {
+        flex-direction: column;
+    }
+
+    .bp-2-copy-container {
+        display: none;
+    }
+
+    .bp-1-copy-container,
+    .bp-2-copy-container-mobile {
+        padding: 12px 32px 0 32px;
+        display: block;
+        width: auto;
+    }
+
+    .blog-post-img-container {
+        align-self: center;
+    }
+
+    .quotes-copy-container {
+        padding: 64px 32px;
+    }
+
+    .quotes-quote {
+        text-align: center;
+    }
+
+    .contact-info-container {
+        flex-direction: column;
+    }
+
+    .map-container {
+        text-align: center;
+        width: auto;
+        padding: 0 32px;
+    }
+
+    .map-container>img {
+        width: 100%;
+        height: 300px;
+    }
+
+    .footer-content-container {
+        flex-direction: column;
+        padding-top: 84px;
+    }
+
+    .foot-info, 
+    .foot-contact,
+    .foot-posts {
+        width: 100%;
+        padding-bottom: 32px;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .header-image {
+        width: 100%;
+        background-image: url('/assets/images/pexels-motional-studio-1081685-mobile.jpg');
+        background-size: auto;
+        background-position-y: top;
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    .slide-1-callout,
+    .slide-1-callout-sub {
+        text-align: center;
+    }
+
+    .slide-1-callout {
+        font-size: 48px;
+    }
+
+    .slide-1-callout-sub {
+        font-size: 24px;
+    }
+
+    .contact-info-form-container {
+        width: 100%;
+        
+    }
+
+    .contact-form {
+        padding: 0 32px;
+    }
+
+    .input-fields {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    input#fname,
+    input#email {
+       margin-right: 0px; 
+    }
+
+    input[type=text] {
+        width: 100%;
+    }
+
 }
