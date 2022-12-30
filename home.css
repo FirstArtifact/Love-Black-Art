@@ -17,6 +17,10 @@ a:hover {
     color: #2C79ED;
 }
 
+.active {
+    color: #2C79ED !important;
+}
+
 .body-width {
     margin: 0 190px;
 }
@@ -193,7 +197,6 @@ a:hover {
     background-color: #4B4B4B;
     height: 540px;
     display: flex;
-    justify-content: space-evenly;
     width: 100%;
 }
 
@@ -227,7 +230,6 @@ a:hover {
 .mof-line-separator {
     border: 1px solid #2C79ED;
     margin: 0 auto;
-
 }
 
 .mof-line-separator-container {
