@@ -212,7 +212,8 @@ a:hover {
 }
 
 .contact-header {
-    padding-bottom: 8px;
+    padding-bottom: 4px;
+    font-size: 8px;
 }
 
 .contact-form-container {
